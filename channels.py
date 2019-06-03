@@ -16,10 +16,8 @@ def main():
 	
 	response = None
 	if production_mode:
-		#print "production mode"
 		response = request.execute()
 	else:
-		#print "test mode"
 		response = mock_search()
 		
 	display_results(response)
